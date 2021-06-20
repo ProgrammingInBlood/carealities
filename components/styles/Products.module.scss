@@ -1,0 +1,41 @@
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.title {
+  font-family: "Exo", sans-serif;
+  font-weight: 900;
+  font-size: 55px;
+  padding-bottom: 20px;
+
+  text-align: center;
+
+  @media (max-width: 600px) {
+    font-size: 50px;
+    padding-bottom: 30px;
+  }
+  span {
+    display: inline-block;
+  }
+}
+
+.content {
+  padding: 0 100px 50px;
+  display: flex;
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  @media (max-width: 600px) {
+    padding: 0;
+    padding-bottom: 50px;
+  }
+}
+
+.gtext {
+  background: -webkit-linear-gradient(#ff62e3, #2b63f3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

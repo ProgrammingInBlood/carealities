@@ -1,0 +1,123 @@
+.containerContact {
+  padding: 30px 0 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 40px;
+  background-color: black;
+  padding-top: 30px;
+  overflow: hidden;
+}
+
+@media (max-width: 600px) {
+  .containerContact {
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.form {
+  font-family: "Space Mono", monospace;
+  display: flex;
+  flex-direction: column;
+  min-width: 400px;
+  background-color: black;
+
+  * {
+    padding: 10px;
+    margin: 10px 0;
+    outline: none;
+  }
+  p {
+    color: #acb6fe;
+  }
+}
+.input[type="number"]::-webkit-inner-spin-button,
+.input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input::placeholder {
+  font-family: "Space Mono", monospace;
+  color: rgba(255, 255, 255, 0.767);
+}
+
+.input {
+  background-color: black;
+  border: 0;
+  border-bottom: 2px solid #acb6fe;
+  font-family: "Space Mono", monospace;
+  color: white;
+}
+
+.textarea {
+  background-color: black;
+  border: 0;
+  border-bottom: 2px solid #acb6fe;
+  font-family: "Space Mono", monospace;
+  color: white;
+}
+
+.textarea::placeholder {
+  font-family: "Space Mono", monospace;
+  color: rgba(255, 255, 255, 0.767);
+}
+
+.button {
+  font-family: "Space Mono", monospace;
+  color: white;
+  background-color: #acb6fe;
+  cursor: pointer;
+}
+
+.button:disabled {
+  cursor: wait;
+
+  background-color: rgb(97, 97, 97);
+}
+
+.contactTitle {
+  font-family: "Paytone One", sans-serif;
+
+  h1 {
+    color: white;
+    font-size: 60px;
+    .span {
+      color: #705df2;
+    }
+  }
+}
+
+.footerContainer {
+  background-color: black;
+  width: 100%;
+  color: white;
+  height: 50px;
+
+  p {
+    text-align: center;
+    margin: 0;
+  }
+}
+
+.main {
+  background-color: var(--main-color);
+}
+
+.iconcontainer {
+  padding: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  background: linear-gradient(#ff62e3, #2b63f3);
+}
+.icons {
+  padding: 5px;
+  margin: 0 20px;
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.icons:hover {
+  transform: scale(1.4);
+}

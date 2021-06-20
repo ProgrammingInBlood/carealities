@@ -1,0 +1,81 @@
+.container {
+  overflow-x: hidden;
+}
+
+.content {
+  padding: 0px 200px 40px;
+
+  @media (max-width: 1200px) {
+    padding: 20px 150px 40px;
+  }
+  @media (max-width: 768px) {
+    padding: 20px 80px 40px;
+  }
+  @media (max-width: 600px) {
+    padding: 20px 10px 40px;
+  }
+}
+
+.text {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  font-size: 15px;
+  padding-top: 10px;
+  @media (max-width: 600px) {
+    margin-top: 30px;
+    font-size: 15px;
+    // text-align: center;
+    padding: 0 10px;
+  }
+}
+
+.title {
+  font-family: "Exo", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+
+  text-align: center;
+  @media (max-width: 1200px) {
+    font-size: 35px;
+  }
+  @media (max-width: 768px) {
+    font-size: 28px;
+  }
+}
+
+.subtitle {
+  font-family: "Exo", sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+
+  text-align: center;
+  @media (max-width: 1200px) {
+    font-size: 25px;
+  }
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+.flexbox {
+  display: flex;
+  align-items: center;
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+.imagebox {
+  min-width: 320px;
+}
+
+.gtext {
+  background: -webkit-linear-gradient(#ff62e3, #2b63f3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.img {
+  border-radius: 20px;
+}

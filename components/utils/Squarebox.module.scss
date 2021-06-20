@@ -1,0 +1,36 @@
+.container {
+  max-width: 350px;
+  max-height: 350px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.container:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transform: scale(1.03);
+}
+.img {
+  border-radius: 30px;
+}
+
+.title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  margin: 0;
+  text-align: center;
+
+  @media (max-width: 600px) {
+    font-size: 20px;
+  }
+}

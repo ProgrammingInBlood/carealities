@@ -1,0 +1,29 @@
+.container {
+  background-color: var(--main-color);
+  overflow: hidden;
+  padding-bottom: 80px;
+}
+
+.title {
+  font-family: "Exo", sans-serif;
+  font-weight: 900;
+  font-size: 65px;
+
+  text-align: center;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 40px;
+  @media (max-width: 600px) {
+    font-size: 50px;
+    padding-bottom: 30px;
+  }
+  span {
+    display: inline-block;
+  }
+}
+
+.gtext {
+  background: -webkit-linear-gradient(#ff62e3, #2b63f3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

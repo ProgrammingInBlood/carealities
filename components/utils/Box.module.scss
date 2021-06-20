@@ -1,0 +1,79 @@
+.content {
+  margin: 30px 100px;
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  border-radius: 40px;
+  justify-content: space-between;
+  background: linear-gradient(315deg, #2b63f3 0%, #ff62e3 74%);
+  color: white;
+  transition: all 5s;
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
+  @media (max-width: 600px) {
+    margin: 30px 20px;
+  }
+}
+
+.banner {
+  margin-left: 30px;
+  @media (max-width: 600px) {
+    margin-left: 0px;
+    padding: 0 20px;
+  }
+  @media (min-width: 1100px) {
+    min-width: 330px;
+  }
+}
+
+.text {
+  padding: 0 30px;
+  max-width: 80%;
+  transition: all 0.5s ease;
+  @media (max-width: 1024px) {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+
+.subtitle {
+  font-family: "Exo", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+}
+.button {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+  background-color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  color: var(--main-color);
+  font-size: 16px;
+  text-transform: capitalize;
+  transition: all 0.5s ease;
+  box-shadow: var(--shadow-black-300);
+  font-weight: 600;
+
+  :focus {
+    box-shadow: var(--shadow-black-300);
+  }
+}
+.button:hover {
+  color: white;
+  background-color: var(--main-color);
+}
+
+.img {
+  border-radius: 20px;
+}
+
+.textbox {
+  padding: 0 30px;
+  max-width: 80%;
+  transition: all 0.5s ease;
+  @media (max-width: 600px) {
+    max-width: 100%;
+  }
+}
