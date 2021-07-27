@@ -4,6 +4,7 @@ import Back from "../components/utils/Back";
 import Image from "next/image";
 import Footer from "../components/screens/Footer";
 import Link from "next/link";
+
 function filter() {
   return (
     <div className={styles.container}>

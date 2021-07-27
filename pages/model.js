@@ -3,6 +3,7 @@ import styles from "../styles/Model.module.scss";
 import Back from "../components/utils/Back";
 import Image from "next/image";
 import Footer from "../components/screens/Footer";
+
 function models() {
   return (
     <div className={styles.container}>
@@ -26,9 +27,9 @@ function models() {
         >
           3D modelling is a technique in computer graphics to create a
           mathematical representation of a 3D object or shape. A creative mind
-          knows the way to derive best from scratch. The Animators and Artists
-          at Carealities rely on 3D Modeling and Animations to bring your idea
-          to life.
+          knows the way to derive the best from scratch. The Animators and
+          Artists at Carealities rely on 3D Modeling and Animations to bring
+          your idea to life.
         </p>
       </div>
       <Image
@@ -174,7 +175,7 @@ function models() {
             Our team at Carealities are dedicated to provide high quality
             rendered model of a terrain, building, anything through aerial
             photographs by combing with the best software. Photogrammetry is
-            basically an art and science of extracting a high- quality 3D model
+            basically an art and science of extracting a high-quality 3D model
             from photographs and real-life objects.
           </p>
           <div

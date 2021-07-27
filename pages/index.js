@@ -18,15 +18,33 @@ export default function Home() {
     router.prefetch("/model");
     router.prefetch("/filter");
   }, [router]);
+
   return (
     <div>
       <Head>
-        <title>CAREALITIES</title>
+        <title>CAREALITIES -Augmented Reality Company</title>
         <meta
           name="description"
           content="Welcome to CAREALITIES where your imagination invites you to create is almost limitless"
         />
+
         <link rel="icon" href="/favicon.ico" />
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=UA-196220537-1`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-196220537-1', {
+              page_path: window.location.pathname,
+            });
+          `,
+          }}
+        />
       </Head>
       <Navbar />
       <HomePage />

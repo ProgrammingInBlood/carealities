@@ -6,36 +6,51 @@
   background-color: black;
   padding-top: 30px;
   overflow: hidden;
+  align-items: center;
 }
 
 @media (max-width: 600px) {
   .containerContact {
     flex-direction: column;
-    padding: 0;
     text-align: center;
   }
 }
 
+.container {
+  max-width: 100vw;
+}
+
 .form {
   font-family: "Space Mono", monospace;
+
+  min-width: 300px;
+  background-color: black;
   display: flex;
   flex-direction: column;
-  min-width: 400px;
-  background-color: black;
+  align-items: center;
+  justify-content: center;
 
   * {
+    display: block;
     padding: 10px;
     margin: 10px 0;
     outline: none;
+    width: 100%;
   }
   p {
     color: #acb6fe;
   }
 }
-.input[type="number"]::-webkit-inner-spin-button,
-.input[type="number"]::-webkit-outer-spin-button {
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+/* Firefox */
+.input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 .input::placeholder {
@@ -46,15 +61,20 @@
 .input {
   background-color: black;
   border: 0;
-  border-bottom: 2px solid #acb6fe;
+  background-color: #242424;
+  border-radius: 20px;
+  // border-bottom: 2px solid #acb6fe;
   font-family: "Space Mono", monospace;
+
   color: white;
 }
 
 .textarea {
   background-color: black;
   border: 0;
-  border-bottom: 2px solid #acb6fe;
+  // border-bottom: 2px solid #acb6fe;
+  background-color: #242424;
+  border-radius: 20px;
   font-family: "Space Mono", monospace;
   color: white;
 }
@@ -65,10 +85,25 @@
 }
 
 .button {
-  font-family: "Space Mono", monospace;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+  background: linear-gradient(315deg, #ff62e3 0%, #2b63f3 74%);
+  padding: 12px 30px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 30px;
   color: white;
-  background-color: #acb6fe;
+  font-size: 16px;
+  text-transform: capitalize;
+  transition: all 0.5s ease;
+  box-shadow: var(--shadow-black-300);
+  font-weight: 600;
   cursor: pointer;
+  transition: all 0.5s;
+}
+
+.button:hover {
+  background: linear-gradient(315deg, #2b63f3 0%, #ff62e3 74%);
 }
 
 .button:disabled {
@@ -106,7 +141,7 @@
 }
 
 .iconcontainer {
-  padding: 40px;
+  padding: 20px;
   display: flex;
   justify-content: space-evenly;
   background: linear-gradient(#ff62e3, #2b63f3);
@@ -120,4 +155,19 @@
 
 .icons:hover {
   transform: scale(1.4);
+}
+
+.text {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .text {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    font-size: 15px;
+  }
 }

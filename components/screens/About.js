@@ -94,9 +94,9 @@ function About() {
             service or products through Augmented Reality app then you must
             definitely consider us. Currently, most of the businesses offer best
             AR products and applications that are unique at an equivalent time
-            innovative. Overall, AR play’s important role in many industries and
-            it are often a game changer for any business. Since AR completely
-            transformed the prevailing tedious methods.
+            innovative. Overall, AR plays an important role in many industries
+            and it are often a game changer for any business. Since AR
+            completely transformed the prevailing tedious methods.
           </p>
         </div>
       </div>
@@ -115,7 +115,7 @@ function About() {
             <Services url="/services/realEstate.png" title="Real Estate" />
             <Services url="/services/education.png" title="Education" />
             <Services url="/services/article.png" title="Print Media" />
-            <Services url="/services/resturant.png" title="Resturants" />
+            <Services url="/services/resturant.png" title="Restaurants" />
             <Services url="/services/transport.png" title="Automobile" />
             <Services url="/services/apple.png" title="Brands" />
             <Services url="/services/events.png" title="Events" />

@@ -3,6 +3,7 @@ import styles from "../styles/Model.module.scss";
 import Back from "../components/utils/Back";
 import Image from "next/image";
 import Footer from "../components/screens/Footer";
+
 function virtual() {
   return (
     <div className={styles.container}>
@@ -77,7 +78,7 @@ function virtual() {
         >
           The interactive sandpit idea was initially brought to light by a team
           of scientists at The UC-Davis (https://arsandbox.ucdavis.edu/ ). They
-          first developed a Linux- based software with limitations of their time
+          first developed a Linux-based software with limitations of their time
           and technology. We have developed a more stabilized, most responsive
           and accurate model.
         </p>
@@ -89,7 +90,7 @@ function virtual() {
           data-aos-duration="500"
           data-aos-delay="200"
         >
-          Contact us to build it one for you or Experience it at you place
+          Contact us to build one for you or Experience it at your place
         </h2>
         <p
           className={styles.text}

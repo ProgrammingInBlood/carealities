@@ -48,7 +48,7 @@ function Service() {
         title={"Marker-Less AR"}
         text="The Marker-Less AR is also known as plane tracking AR solution
     which places 3D content over the real world’s environment. With no
-    priosr knowledge about the surface, Marker-less AR solution with
+    prior knowledge about the surface, Marker-less AR solution with
     the help of a device allows users to scan the surface/plane in their
     environment and place the 3D objects over it."
       />

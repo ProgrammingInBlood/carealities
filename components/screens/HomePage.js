@@ -4,7 +4,11 @@ import Image from "next/image";
 
 function HomePage() {
   return (
-    <div id="home" style={{ paddingTop: "100px", marginTop: "-100px" }}>
+    <div
+      id="home"
+      style={{ paddingTop: "100px", marginTop: "-100px" }}
+      className={styles.content}
+    >
       <div className={styles.container}>
         <div
           className={styles.textbox}
@@ -82,6 +86,7 @@ function HomePage() {
             width={620}
             height={620}
             layout="fixed"
+            objectFit="contain"
             alt="Hand"
           />
         </div>
@@ -97,7 +102,7 @@ function HomePage() {
             src="/two-hands.png"
             width={620}
             height={620}
-            layout="responsive"
+            objectFit="contain"
             alt="hand"
           />
         </div>
