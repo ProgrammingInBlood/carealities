@@ -83,7 +83,7 @@ function Floor() {
           className={styles.text}
           data-aos="fade-right"
           data-aos-duration="500"
-          data-aos-delay="250"
+          data-aos-delay="251"
         >
           Carealities Team offers creative services to customize and optimize
           your campaign. Our team can help you to incorporate your ideas into
