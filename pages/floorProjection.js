@@ -63,7 +63,7 @@ function Floor() {
           events, trade fairs, promotional campaigns and much more
           <br />• Play area in theme parks, water attractions, spas, science
           center and museums
-          <br />• Kids entertainment for waiting areas, kid's corners and
+          <br />• Kids entertainment for waiting areas, kid&apos;s corners and
           shopping malls
           <br />
           •Engage kids in a hygienic, safe and enjoyable way by converting any
