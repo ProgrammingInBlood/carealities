@@ -4,13 +4,21 @@ import Back from "../components/utils/Back";
 import Image from "next/image";
 import Footer from "../components/screens/Footer";
 import Link from "next/link";
+import Head from "next/head";
 
-function filter() {
+function Filter() {
   return (
     <div className={styles.container}>
       <Navbar />
       <Back />
-
+      <Head>
+        <title>AR Filter</title>
+        <meta
+          name="description"
+          content="Augmented reality (AR) filters superimposed virtual objects on
+          real-life images."
+        ></meta>
+      </Head>
       <div className={styles.content}>
         <h1
           className={styles.title}
@@ -39,12 +47,7 @@ function filter() {
           media and also it reduces the cost of designing.
         </p>
       </div>
-      <Image
-        src="/products/ar-filters.jpg"
-        width={1920}
-        height={924}
-        alt="box"
-      />
+      <Image src="/products/ar.jpg" width={1920} height={924} alt="box" />
       <div className={styles.content}>
         <h1
           className={styles.title}
@@ -72,4 +75,4 @@ function filter() {
   );
 }
 
-export default filter;
+export default Filter;

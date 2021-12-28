@@ -2,14 +2,22 @@ import Navbar from "../components/screens/NavBar";
 import styles from "../styles/Model.module.scss";
 import Back from "../components/utils/Back";
 import Image from "next/image";
+import Head from "next/head";
 import Footer from "../components/screens/Footer";
 
-function models() {
+function Models() {
   return (
     <div className={styles.container}>
       <Navbar />
       <Back />
-
+      <Head>
+        <title>3D Modelling</title>
+        <meta
+          name="description"
+          content=" 3D modelling is a technique in computer graphics to create a
+          mathematical representation of a 3D object or shape"
+        ></meta>
+      </Head>
       <div className={styles.content}>
         <h1
           className={styles.title}
@@ -199,4 +207,4 @@ function models() {
   );
 }
 
-export default models;
+export default Models;

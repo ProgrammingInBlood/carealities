@@ -7,7 +7,7 @@ function About() {
   const Router = useRouter();
 
   function Industries() {
-    Router.push("/industries");
+    Router.push("/virtual");
   }
   return (
     <div

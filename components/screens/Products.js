@@ -1,7 +1,9 @@
 import styles from "../styles/Products.module.scss";
 import Squarebox from "../utils/Squarebox";
-
+import Image from "next/image";
+import { useRouter } from "next/router";
 function Products() {
+  const router = useRouter();
   return (
     <div
       className={styles.container}
@@ -36,26 +38,38 @@ function Products() {
 
       <div className={styles.content}>
         <Squarebox
-          path="virtual"
+          path="arSandpit"
           anim="fade-right"
           delay="600"
           url="/products/ar-sandpit.jpg"
           title="AR Sandpit"
         />
         <Squarebox
-          path="filter"
+          path="arFilter"
           anim="fade-right"
           delay="400"
           url="/products/ar-filters.jpg"
           title="AR Filters"
         />
         <Squarebox
-          path="model"
+          path="3dmodelling"
           anim="fade-right"
           delay="200"
           url="/products/3d-model.png"
           title="3D Modeling and Animations"
         />
+      </div>
+      <div
+        onClick={() => router.push("/floorProjection")}
+        style={{
+          height: 200,
+          position: "relative",
+          width: "100%",
+          padding: 20,
+          maxHeight: 200,
+        }}
+      >
+        <Image src="/floor.jpg" layout="fill" objectFit="contain" />
       </div>
     </div>
   );

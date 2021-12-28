@@ -8,15 +8,17 @@ import Contact from "../components/screens/Contact";
 import Footer from "../components/screens/Footer";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
+import Image from "next/image";
 
 export default function Home() {
   const router = useRouter();
+
   useEffect(() => {
     router.prefetch("/virtual");
     router.prefetch("/");
-    router.prefetch("/industries");
-    router.prefetch("/model");
-    router.prefetch("/filter");
+    router.prefetch("/arSandpit");
+    router.prefetch("/arFilter");
+    router.prefetch("/3dmodelling");
   }, [router]);
 
   return (
@@ -50,7 +52,9 @@ export default function Home() {
       <HomePage />
       <About />
       <Service />
+
       <Products />
+
       <Contact />
       <Footer />
     </div>
