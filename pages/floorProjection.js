@@ -47,7 +47,34 @@ function Floor() {
           parties and advertising expos.
         </p>
       </div>
-      <Image src="/image3.jpg" width={1920} height={724} alt="box" />
+      <div className={styles.image}>
+        <Image
+          src="/hero-banner-image1.jpg"
+          width={1920}
+          height={724}
+          alt="box"
+        />
+        <Image
+          src="/Interactive led floor.jpg"
+          width={1920}
+          height={724}
+          alt="box"
+        />
+      </div>
+
+      <div
+        style={{
+          height: 200,
+          position: "relative",
+          width: "100%",
+          padding: 20,
+          marginTop: 100,
+          maxHeight: 200,
+          marginBottom: 50,
+        }}
+      >
+        <Image src="/floor.jpg" layout="fill" objectFit="contain" />
+      </div>
       <div className={styles.content}>
         <p
           className={styles.text}

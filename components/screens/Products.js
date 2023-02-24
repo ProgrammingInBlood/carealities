@@ -48,7 +48,7 @@ function Products() {
           path="arFilter"
           anim="fade-right"
           delay="400"
-          url="/products/ar-filters.jpg"
+          url="/products/ar-filters.png"
           title="AR Filters"
         />
         <Squarebox
@@ -58,18 +58,13 @@ function Products() {
           url="/products/3d-model.png"
           title="3D Modeling and Animations"
         />
-      </div>
-      <div
-        onClick={() => router.push("/floorProjection")}
-        style={{
-          height: 200,
-          position: "relative",
-          width: "100%",
-          padding: 20,
-          maxHeight: 200,
-        }}
-      >
-        <Image src="/floor.jpg" layout="fill" objectFit="contain" />
+        <Squarebox
+          path="floorProjection"
+          anim="fade-right"
+          delay="100"
+          url="/products/Interactive-Floor.jpg"
+          title="Interactive Floor/wall"
+        />
       </div>
     </div>
   );

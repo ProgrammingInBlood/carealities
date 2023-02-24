@@ -26,14 +26,17 @@ function Navbar() {
   // const [show, setShow] = useState(false);
   const [width, setWidth] = useState(0);
 
+  function hideIt() {
+    setClick(false);
+  }
+
   useEffect(() => {
     setWidth(window.innerWidth);
-  }, [width]);
-  function hideIt() {
+
     if (width <= 768) {
-      setClick(!click);
+      hideIt();
     }
-  }
+  }, [width]);
 
   return (
     <div className={styles.container}>
@@ -54,24 +57,24 @@ function Navbar() {
           <MenuButton style={{ fill: "#ad2bf3", transform: "scale(1.5)" }} />
         )}
       </div>
-      <ul className={click ? styles.menuactive : styles.menu} onClick={hideIt}>
-        <li className={styles.list}>
+      <ul className={click ? styles.menuactive : styles.menu}>
+        <li className={styles.list} onClick={hideIt}>
           <Link href="/#home">Home</Link>
           <div className={styles.underline}></div>
         </li>
-        <li className={styles.list}>
+        <li className={styles.list} onClick={hideIt}>
           <Link href="/#about">About</Link>
           <div className={styles.underline}></div>
         </li>
-        <li className={styles.list}>
+        <li className={styles.list} onClick={hideIt}>
           <Link href="/#services">Services</Link>
           <div className={styles.underline}></div>
         </li>
-        <li className={styles.list}>
+        <li className={styles.list} onClick={hideIt}>
           <Link href="/#product">Products</Link>
           <div className={styles.underline}></div>
         </li>
-        <li className={styles.list}>
+        <li className={styles.list} onClick={hideIt}>
           <Link href="/#contact">Contact Us</Link>
           <div className={styles.underline}></div>
         </li>

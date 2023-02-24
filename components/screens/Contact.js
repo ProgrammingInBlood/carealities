@@ -4,6 +4,7 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import WhatsAppIcon from "@material-ui/icons/WhatsApp";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import TwitterIcon from "@material-ui/icons/Twitter";
+import YoutubeIcon from "@material-ui/icons/YouTube";
 import Link from "next/link";
 function Contact() {
   const [state, handleSubmit] = useForm("xnqlvyag");
@@ -36,6 +37,14 @@ function Contact() {
           <Link href="https://twitter.com/_CAREALITIES_" passHref={true}>
             <div className={styles.icons}>
               <TwitterIcon style={{ fill: "white" }} />
+            </div>
+          </Link>
+          <Link
+            href="https://www.youtube.com/channel/UCfmUqDXVKaZdD1s066Bw5Gw"
+            passHref={true}
+          >
+            <div className={styles.icons}>
+              <YoutubeIcon style={{ fill: "white" }} />
             </div>
           </Link>
         </div>

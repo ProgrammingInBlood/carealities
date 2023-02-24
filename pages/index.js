@@ -52,9 +52,7 @@ export default function Home() {
       <HomePage />
       <About />
       <Service />
-
       <Products />
-
       <Contact />
       <Footer />
     </div>

@@ -111,7 +111,7 @@ function About() {
           >
             INDUSTRIE’S WE SERVE
           </h2>
-          <div className={styles.service}>
+          <div className={styles.service} onClick={Industries}>
             <Services url="/services/realEstate.png" title="Real Estate" />
             <Services url="/services/education.png" title="Education" />
             <Services url="/services/article.png" title="Print Media" />
